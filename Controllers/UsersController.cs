@@ -17,18 +17,36 @@ namespace Library.API.Controllers
     {
         private ILibraryRepository _libraryRepository;
         private IUrlHelper _urlHelper;
+        private IPropertyMappingService _propertyMappingService;
+        private ITypeHelperService _typeHelperService;
 
         public UsersController(ILibraryRepository libraryRepository,
-            IUrlHelper urlHelper)
+            IUrlHelper urlHelper,
+            IPropertyMappingService propertyMappingService,
+            ITypeHelperService typeHelperService)
         {
             _libraryRepository = libraryRepository;
             _urlHelper = urlHelper;
+            _propertyMappingService = propertyMappingService;
+            _typeHelperService = typeHelperService;
+
         }
 
         [HttpGet(Name = "GetUsers")]
         public IActionResult GetUsers(UserResourceParameters userResourceParameters)
         {
-            
+            if(!_propertyMappingService.ValidMappingExistsFor<UserDto, User>
+                (userResourceParameters.OrderBy))
+            {
+                return BadRequest();
+            }
+
+            if (!_typeHelperService.TypeHasProperties<UserDto>
+                (userResourceParameters.Fields))
+            {
+                return BadRequest();
+            }
+
             var usersFromRepo = _libraryRepository.GetUsers(userResourceParameters);
 
             var previousPageLink = usersFromRepo.HasPrevious ? 
@@ -53,7 +71,7 @@ namespace Library.API.Controllers
                 Newtonsoft.Json.JsonConvert.SerializeObject(paginationMetadata));
 
             var users = Mapper.Map<IEnumerable<UserDto>>(usersFromRepo);
-            return Ok(users);
+            return Ok(users.ShapeData(userResourceParameters.Fields));
         }
 
         private string CreateUsersResouceUri(
@@ -66,6 +84,8 @@ namespace Library.API.Controllers
                     return _urlHelper.Link("GetUsers",
                       new
                       {
+                          fields = userResourceParameters.Fields,
+                          orderBy = userResourceParameters.OrderBy,
                           firstname = userResourceParameters.FirstName,
                           lastname = userResourceParameters.LastName,
                           imei = userResourceParameters.IMEI,
@@ -76,6 +96,8 @@ namespace Library.API.Controllers
                     return _urlHelper.Link("GetUsers",
                       new
                       {
+                          fields = userResourceParameters.Fields,
+                          orderBy = userResourceParameters.OrderBy,
                           firstname = userResourceParameters.FirstName,
                           lastname = userResourceParameters.LastName,
                           imei = userResourceParameters.IMEI,
@@ -87,6 +109,8 @@ namespace Library.API.Controllers
                     return _urlHelper.Link("GetUsers",
                     new
                     {
+                        fields = userResourceParameters.Fields,
+                        orderBy = userResourceParameters.OrderBy,
                         firstname = userResourceParameters.FirstName,
                         lastname = userResourceParameters.LastName,
                         imei = userResourceParameters.IMEI,
@@ -97,8 +121,15 @@ namespace Library.API.Controllers
         }
 
         [HttpGet("{id}", Name = "GetUser")]
-        public IActionResult GetUser(Guid id)
+        public IActionResult GetUser(Guid id, [FromQuery] string fields, UserResourceParameters userResourceParameters)
         {
+
+            if (!_typeHelperService.TypeHasProperties<UserDto>
+                (userResourceParameters.Fields))
+            {
+                return BadRequest();
+            }
+
             var userFromRepo = _libraryRepository.GetUser(id);
 
             if (userFromRepo == null)
@@ -107,7 +138,7 @@ namespace Library.API.Controllers
             }
 
             var user = Mapper.Map<UserDto>(userFromRepo);
-            return Ok(user);
+            return Ok(user.ShapeData(fields));
         }
 
         [HttpPost]

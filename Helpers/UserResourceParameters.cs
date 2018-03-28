@@ -32,5 +32,10 @@ namespace Library.API.Helpers
         public string IMEI { get; set; }
 
         public string SearchQuery { get; set; }
+
+        public string OrderBy { get; set; } = "Name";
+
+        // To store the fields of data needed by the user. 
+        public string Fields { get; set; }
     }
 }

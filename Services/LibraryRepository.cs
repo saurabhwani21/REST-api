@@ -1,5 +1,6 @@
 ﻿using Library.API.Entities;
 using Library.API.Helpers;
+using Library.API.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,12 @@ namespace Library.API.Services
     public class LibraryRepository : ILibraryRepository
     {
         private LibraryContext _context;
+        private IPropertyMappingService _propertyMappingService;
 
-        public LibraryRepository(LibraryContext context)
+        public LibraryRepository(LibraryContext context, IPropertyMappingService propertyMappingService)
         {
             _context = context;
+            _propertyMappingService = propertyMappingService;
         }
 
         public void AddUser(User user)
@@ -68,9 +71,15 @@ namespace Library.API.Services
         public PagedList<User> GetUsers(
             UserResourceParameters userResourceParameters)
         {
-            var collectionBeforePaging = _context.Users
-                .OrderBy(a => a.FirstName)
-                .ThenBy(a => a.LastName).AsQueryable();
+            //var collectionBeforePaging = _context.Users
+            //    .OrderBy(a => a.FirstName)
+            //    .ThenBy(a => a.LastName).AsQueryable();
+
+            var collectionBeforePaging =
+                _context.Users.ApplySort(userResourceParameters.OrderBy,
+                _propertyMappingService.GetPropertyMapping<UserDto, User>());
+         
+
 
             //Search using search query (Firstname and Lastname)
             if (!string.IsNullOrEmpty(userResourceParameters.SearchQuery))
