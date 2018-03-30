@@ -756,3 +756,2087 @@ ORDER BY [MigrationId];
 2018-03-28 12:07:34.2098|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUser (Library.API) in 597.3198ms
 2018-03-28 12:07:34.2438|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 640.7715ms 400 
 2018-03-28 12:07:34.2741|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 640.7715ms 400 
+2018-03-28 12:57:16.3684|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 12:57:17.8650|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 12:57:30.7153|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (159ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:57:30.7575|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:57:30.7720|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 12:57:30.8046|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 12:57:31.6277|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 12:57:31.6345|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 12:57:32.0520|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (284ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 12:57:32.0825|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (284ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 12:57:32.1432|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 12:57:32.1673|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 12:57:32.1923|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 12:57:32.2165|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 12:57:33.5642|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 12:57:33.6800|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 12:57:33.7434|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores application/json 
+2018-03-28 12:57:33.7565|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores application/json 
+2018-03-28 12:57:34.3346|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 787.2643ms 404 
+2018-03-28 12:57:34.3346|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 787.2643ms 404 
+2018-03-28 12:57:34.5147|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 12:57:34.5302|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 12:57:34.5546|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:57:34.5546|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:57:34.5697|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:57:34.5697|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:57:34.5853|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 12:57:34.5853|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 12:57:34.6011|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 12:57:34.6011|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 12:57:34.7167|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-03-28 12:57:34.7440|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-03-28 12:57:34.9165|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 12:57:34.9165|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 12:57:34.9808|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-03-28 12:57:35.0060|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-03-28 12:57:35.0632|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-03-28 12:57:35.0884|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-03-28 12:57:35.2505|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 12:57:35.2772|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 12:57:35.3806|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 872.6947ms
+2018-03-28 12:57:35.4061|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 872.6947ms
+2018-03-28 12:57:35.4118|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1681.0269ms 200 application/json; charset=utf-8
+2018-03-28 12:57:35.4361|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1681.0269ms 200 application/json; charset=utf-8
+2018-03-28 12:58:11.2350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/01457142-358f-495f-aafa-fb23de3d67e9 application/json 
+2018-03-28 12:58:11.2408|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/01457142-358f-495f-aafa-fb23de3d67e9 application/json 
+2018-03-28 12:58:11.2605|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 12:58:11.2854|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 12:58:11.3088|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:58:11.3327|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:58:11.3582|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:58:11.3643|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:58:11.3889|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 12:58:11.4130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 12:58:11.4359|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 12:58:11.4602|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 12:58:11.4845|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoreForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, 01457142-358f-495f-aafa-fb23de3d67e9) - ModelState is Valid
+2018-03-28 12:58:11.5094|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoreForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, 01457142-358f-495f-aafa-fb23de3d67e9) - ModelState is Valid
+2018-03-28 12:58:11.5094|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 12:58:11.5396|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 12:58:11.6707|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (121ms) [Parameters=[@__userId_0='?', @__scoreId_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE ([b].[UserId] = @__userId_0) AND ([b].[Id] = @__scoreId_1)
+2018-03-28 12:58:11.6776|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (121ms) [Parameters=[@__userId_0='?', @__scoreId_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE ([b].[UserId] = @__userId_0) AND ([b].[Id] = @__scoreId_1)
+2018-03-28 12:58:11.7058|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 12:58:11.7299|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 12:58:11.7537|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoreForUser (Library.API) in 480.1953ms
+2018-03-28 12:58:11.7612|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoreForUser (Library.API) in 480.1953ms
+2018-03-28 12:58:11.7848|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 529.4817ms 200 application/json; charset=utf-8
+2018-03-28 12:58:11.7929|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 529.4817ms 200 application/json; charset=utf-8
+2018-03-28 12:59:06.2490|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 78
+2018-03-28 12:59:06.2753|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 78
+2018-03-28 12:59:06.2753|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 12:59:06.3126|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 12:59:06.3126|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:59:06.3418|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:59:06.3660|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:59:06.3907|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:59:06.4148|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 12:59:06.4389|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 12:59:06.4389|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 12:59:06.4680|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 12:59:06.6324|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Models.ScoreForCreationDto) - ModelState is Valid
+2018-03-28 12:59:06.6581|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Models.ScoreForCreationDto) - ModelState is Valid
+2018-03-28 12:59:06.6849|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 12:59:06.7090|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 12:59:06.7090|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 12:59:06.7481|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 12:59:06.7481|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p0, @p1, @p2, @p3);
+2018-03-28 12:59:06.7609|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p0, @p1, @p2, @p3);
+2018-03-28 12:59:06.7875|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 12:59:06.7875|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 12:59:06.7875|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) in 515.4538ms
+2018-03-28 12:59:06.8079|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) in 515.4538ms
+2018-03-28 12:59:06.8207|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 585.0866ms 201 application/json; charset=utf-8
+2018-03-28 12:59:06.8207|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 585.0866ms 201 application/json; charset=utf-8
+2018-03-28 12:59:28.8996|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 
+2018-03-28 12:59:28.8996|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 
+2018-03-28 12:59:28.9318|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 12:59:28.9578|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 12:59:28.9578|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:59:29.1366|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:59:29.1366|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:59:29.1704|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 12:59:29.1950|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 12:59:29.2206|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 12:59:29.2230|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 12:59:29.2526|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 12:59:29.2798|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-03-28 12:59:29.3690|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-03-28 12:59:29.4012|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 12:59:29.6303|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 12:59:29.6961|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-03-28 12:59:29.7908|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-03-28 12:59:29.8054|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-03-28 12:59:29.8199|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-03-28 12:59:29.8199|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 12:59:29.8365|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 12:59:29.8365|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 927.5806ms
+2018-03-28 12:59:29.8724|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 927.5806ms
+2018-03-28 12:59:29.8848|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 976.1334ms 200 application/json; charset=utf-8
+2018-03-28 12:59:29.9070|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 976.1334ms 200 application/json; charset=utf-8
+2018-03-28 13:10:49.6384|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 13:10:50.8051|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:11:00.6848|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (261ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:00.7183|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:00.7523|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:11:00.7698|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:11:01.4168|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 13:11:01.4168|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 13:11:02.4269|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (864ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 13:11:02.4269|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (864ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 13:11:02.5010|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 13:11:02.5269|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 13:11:02.5553|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 13:11:02.5800|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 13:11:03.0631|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 
+2018-03-28 13:11:03.0631|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 13:11:03.1195|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 13:11:03.1195|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 
+2018-03-28 13:11:03.3076|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 260.0801ms 404 
+2018-03-28 13:11:03.3443|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 260.0801ms 404 
+2018-03-28 13:11:03.5873|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:11:03.5873|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:11:03.6079|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:03.6447|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:03.6597|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:03.6766|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:03.6766|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:11:03.6954|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:11:03.7293|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:11:03.7449|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:11:03.8371|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-03-28 13:11:03.8371|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-03-28 13:11:03.9286|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:11:03.9286|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:11:04.0130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-03-28 13:11:04.0287|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-03-28 13:11:04.1756|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (110ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-03-28 13:11:04.1909|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (110ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-03-28 13:11:04.3589|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:11:04.3720|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:11:04.4942|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 957.9061ms
+2018-03-28 13:11:04.5255|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 957.9061ms
+2018-03-28 13:11:04.5764|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1503.9436ms 200 application/json; charset=utf-8
+2018-03-28 13:11:04.7428|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1503.9436ms 200 application/json; charset=utf-8
+2018-03-28 13:11:15.2458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 78
+2018-03-28 13:11:15.2763|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 78
+2018-03-28 13:11:15.3854|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:11:15.4266|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:11:15.5340|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (95ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:15.5719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (95ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:15.5719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:15.7161|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:15.7588|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:11:15.7756|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:11:15.8015|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:11:15.8352|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:11:15.8934|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Models.ScoreForCreationDto) - ModelState is Valid
+2018-03-28 13:11:16.0066|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Models.ScoreForCreationDto) - ModelState is Valid
+2018-03-28 13:11:16.0923|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (49ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:11:16.1252|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (49ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:11:16.1707|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 13:11:16.2363|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 13:11:16.3574|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (48ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p0, @p1, @p2, @p3);
+2018-03-28 13:11:16.4229|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (48ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p0, @p1, @p2, @p3);
+2018-03-28 13:11:16.4540|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:11:16.4795|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:11:16.6393|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) in 1183.464ms
+2018-03-28 13:11:16.6597|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) in 1183.464ms
+2018-03-28 13:11:16.7223|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1497.2068ms 201 application/json; charset=utf-8
+2018-03-28 13:11:16.7426|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1497.2068ms 201 application/json; charset=utf-8
+2018-03-28 13:11:22.6132|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 
+2018-03-28 13:11:22.6258|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/ application/json 
+2018-03-28 13:11:22.6329|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:11:22.6617|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:11:22.6617|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:22.6896|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:22.6945|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:22.7089|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:11:22.7352|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:11:22.7459|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:11:22.7459|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:11:22.7632|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:11:22.7632|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-03-28 13:11:22.7952|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-03-28 13:11:22.8189|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:11:22.8419|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:11:22.8531|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-03-28 13:11:22.8780|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-03-28 13:11:22.8859|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-03-28 13:11:22.9291|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[InstanceScore], [b].[TimeStamp], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-03-28 13:11:22.9437|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:11:22.9437|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:11:22.9770|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 327.0691ms
+2018-03-28 13:11:22.9770|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 327.0691ms
+2018-03-28 13:11:23.0072|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 379.5838ms 200 application/json; charset=utf-8
+2018-03-28 13:11:23.0415|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 379.5838ms 200 application/json; charset=utf-8
+2018-03-28 13:40:07.1093|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 13:40:07.8547|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:40:18.1067|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (250ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:40:18.1383|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:40:18.1792|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:40:18.2154|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:40:19.3547|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 13:40:19.3547|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 13:40:19.5457|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (68ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 13:40:19.5547|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (68ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 13:40:19.6386|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 13:40:19.6386|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 13:40:19.6750|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 13:40:19.6847|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 13:40:20.4117|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 13:40:20.4458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 13:40:20.6669|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 276.0885ms 404 
+2018-03-28 13:40:20.7480|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 276.0885ms 404 
+2018-03-28 13:40:35.5896|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e application/json 
+2018-03-28 13:40:35.5896|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e application/json 
+2018-03-28 13:40:36.6104|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:40:36.6364|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:40:36.6455|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:40:36.6455|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:40:36.6455|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:40:36.6651|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:40:36.6651|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:40:36.6783|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:40:36.6783|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:40:36.6971|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:40:36.7929|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, , Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 13:40:36.8190|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, , Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 13:40:36.8662|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 13:40:36.8662|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 13:40:36.9205|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:40:36.9307|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:40:37.1056|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUser (Library.API) in 487.2862ms
+2018-03-28 13:40:37.1056|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUser (Library.API) in 487.2862ms
+2018-03-28 13:40:37.1224|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1526.6332ms 200 application/json; charset=utf-8
+2018-03-28 13:40:37.1405|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1526.6332ms 200 application/json; charset=utf-8
+2018-03-28 13:41:09.6180|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e?fields=id,name application/json 
+2018-03-28 13:41:09.6180|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e?fields=id,name application/json 
+2018-03-28 13:41:09.6474|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:41:09.6474|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:41:09.6782|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:41:09.7031|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:41:09.7292|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:41:09.7535|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:41:09.7775|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:41:09.7775|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:41:09.7878|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:41:09.7878|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:41:09.8119|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, id,name, Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 13:41:09.8290|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, id,name, Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 13:41:09.8373|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 13:41:09.8373|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 13:41:09.8537|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:41:09.8537|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:41:09.8537|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUser (Library.API) in 220.2042ms
+2018-03-28 13:41:09.8783|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUser (Library.API) in 220.2042ms
+2018-03-28 13:41:09.9042|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 290.2179ms 200 application/json; charset=utf-8
+2018-03-28 13:41:09.9162|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 290.2179ms 200 application/json; charset=utf-8
+2018-03-28 13:42:08.0913|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e application/json 78
+2018-03-28 13:42:08.1013|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e application/json 78
+2018-03-28 13:42:08.1147|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:42:08.1147|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:42:08.1316|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:08.1316|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:08.1629|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:08.1629|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:08.1949|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:42:08.2213|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:42:08.2469|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:42:08.2469|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:42:08.2771|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.BlockUserCreation (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e) - ModelState is Valid
+2018-03-28 13:42:08.3021|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.BlockUserCreation (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e) - ModelState is Valid
+2018-03-28 13:42:08.3345|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:42:08.3603|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:42:08.3898|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 409
+2018-03-28 13:42:08.3983|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 409
+2018-03-28 13:42:08.4230|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.BlockUserCreation (Library.API) in 289.6553ms
+2018-03-28 13:42:08.4286|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.BlockUserCreation (Library.API) in 289.6553ms
+2018-03-28 13:42:08.4286|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 354.935ms 409 
+2018-03-28 13:42:08.4506|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 354.935ms 409 
+2018-03-28 13:42:16.5777|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e application/json 78
+2018-03-28 13:42:16.5860|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e application/json 78
+2018-03-28 13:42:16.5860|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:42:16.5860|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:42:16.6213|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:16.6213|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:16.6315|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:16.6570|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:16.6611|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:42:16.6611|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:42:16.6773|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:42:16.6773|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:42:16.7069|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.BlockUserCreation (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e) - ModelState is Valid
+2018-03-28 13:42:16.7318|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.BlockUserCreation (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e) - ModelState is Valid
+2018-03-28 13:42:16.7318|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:42:16.7418|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:42:16.7418|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 409
+2018-03-28 13:42:16.7418|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 409
+2018-03-28 13:42:16.7574|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.BlockUserCreation (Library.API) in 167.848ms
+2018-03-28 13:42:16.7819|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.BlockUserCreation (Library.API) in 167.848ms
+2018-03-28 13:42:16.7876|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 207.6655ms 409 
+2018-03-28 13:42:16.8139|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 207.6655ms 409 
+2018-03-28 13:42:47.9182|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e application/json 78
+2018-03-28 13:42:47.9282|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e application/json 78
+2018-03-28 13:42:47.9571|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:42:47.9832|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:42:48.0063|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:48.0305|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:48.0305|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:48.0600|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:42:48.0600|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:42:48.0890|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:42:48.0890|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:42:48.1213|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:42:48.1213|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.BlockUserCreation (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e) - ModelState is Valid
+2018-03-28 13:42:48.1319|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.BlockUserCreation (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e) - ModelState is Valid
+2018-03-28 13:42:48.1559|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:42:48.1809|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:42:48.1809|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 409
+2018-03-28 13:42:48.2090|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 409
+2018-03-28 13:42:48.2090|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.BlockUserCreation (Library.API) in 275.4062ms
+2018-03-28 13:42:48.2381|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.BlockUserCreation (Library.API) in 275.4062ms
+2018-03-28 13:42:48.2437|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 326.3067ms 409 
+2018-03-28 13:42:48.2437|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 326.3067ms 409 
+2018-03-28 13:43:02.4522|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/ application/json 78
+2018-03-28 13:43:02.4599|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/ application/json 78
+2018-03-28 13:43:02.4599|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:43:02.4958|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:43:02.5204|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:43:02.5445|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:43:02.5676|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:43:02.5918|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:43:02.6148|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:43:02.6397|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:43:02.6628|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:43:02.6874|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:43:02.8600|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.CreateUser (Library.API) with arguments (Library.API.Models.UserForCreationDto) - ModelState is Valid
+2018-03-28 13:43:02.8749|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.CreateUser (Library.API) with arguments (Library.API.Models.UserForCreationDto) - ModelState is Valid
+2018-03-28 13:43:03.2273|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (125ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2018-03-28 13:43:03.2872|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (125ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2018-03-28 13:43:03.3782|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'Library.API.Entities.LibraryContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'FirstName', table 'LibraryDB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2018-03-28 13:43:03.4407|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'Library.API.Entities.LibraryContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'FirstName', table 'LibraryDB.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2018-03-28 13:43:10.8220|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.CreateUser (Library.API) in 8353.115ms
+2018-03-28 13:43:10.8504|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.CreateUser (Library.API) in 8353.115ms
+2018-03-28 13:43:11.0303|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: An error occurred while updating the entries. See the inner exception for details.
+2018-03-28 13:43:11.1253|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: An error occurred while updating the entries. See the inner exception for details.
+2018-03-28 13:43:11.1581|ERROR|Global exception logger|An error occurred while updating the entries. See the inner exception for details.
+2018-03-28 13:43:11.2216|ERROR|Global exception logger|An error occurred while updating the entries. See the inner exception for details.
+2018-03-28 13:43:11.2709|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8797.7429ms 500 
+2018-03-28 13:43:11.2709|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8797.7429ms 500 
+2018-03-28 13:43:43.7096|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores application/json 69
+2018-03-28 13:43:43.7096|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores application/json 69
+2018-03-28 13:43:43.7516|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:43:43.7609|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 13:43:43.7609|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:43:43.7719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:43:43.7719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:43:43.7719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 13:43:43.7882|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:43:43.7882|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 13:43:43.7882|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:43:43.8087|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 13:43:43.8409|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Models.ScoreForCreationDto) - ModelState is Valid
+2018-03-28 13:43:43.8721|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Models.ScoreForCreationDto) - ModelState is Valid
+2018-03-28 13:43:43.8721|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:43:43.9064|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-03-28 13:43:43.9347|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 13:43:43.9587|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName]
+FROM [Users] AS [a]
+WHERE [a].[Id] = @__userId_0
+2018-03-28 13:43:44.2245|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (262ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p0, @p1, @p2, @p3);
+2018-03-28 13:43:44.2494|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (262ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p0, @p1, @p2, @p3);
+2018-03-28 13:43:44.2591|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:43:44.2869|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 13:43:44.3178|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) in 565.5996ms
+2018-03-28 13:43:44.3178|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.CreateScoreForUser (Library.API) in 565.5996ms
+2018-03-28 13:43:44.3398|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 620.9383ms 201 application/json; charset=utf-8
+2018-03-28 13:43:44.3398|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 620.9383ms 201 application/json; charset=utf-8
+2018-03-28 14:07:08.4194|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 14:07:08.9685|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 14:07:15.8778|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (423ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:07:15.8937|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:07:15.9065|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 14:07:15.9460|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 14:07:16.4360|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 14:07:16.4500|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 14:07:16.7692|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (168ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 14:07:16.7971|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (168ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 14:07:16.9388|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 14:07:16.9659|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 14:07:16.9803|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 14:07:16.9981|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 14:07:17.6835|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 14:07:17.7062|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 14:07:17.8639|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 206.4092ms 404 
+2018-03-28 14:07:17.8924|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 206.4092ms 404 
+2018-03-28 14:07:34.6255|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users  
+2018-03-28 14:07:34.6509|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users  
+2018-03-28 14:07:35.0013|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 14:07:35.0132|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 14:07:35.0132|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:07:35.0282|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:07:35.0282|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:07:35.0430|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:07:35.0671|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 14:07:35.0762|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 14:07:35.1001|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 14:07:35.1001|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 14:07:35.1669|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 14:07:35.1669|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 14:07:37.0962|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 14:07:37.1064|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 14:07:37.1421|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 14:07:37.1531|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 14:07:37.2632|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 14:07:37.2902|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 14:07:37.3739|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 2359.7012ms
+2018-03-28 14:07:37.4023|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 2359.7012ms
+2018-03-28 14:07:37.4023|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2800.446ms 200 application/json; charset=utf-8
+2018-03-28 14:07:37.4178|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2800.446ms 200 application/json; charset=utf-8
+2018-03-28 14:08:38.2999|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users?orderBy=name&serchQuery=a&pageNumber=1&pageSize=3  
+2018-03-28 14:08:38.3129|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users?orderBy=name&serchQuery=a&pageNumber=1&pageSize=3  
+2018-03-28 14:08:38.3223|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 14:08:38.3563|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 14:08:38.3834|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:08:38.4085|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:08:38.4124|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:08:38.4382|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:08:38.4628|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 14:08:38.4879|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 14:08:38.4913|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 14:08:38.4913|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 14:08:38.5145|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 14:08:38.5409|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 14:08:38.5691|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 14:08:38.5942|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 14:08:38.5984|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 14:08:38.5984|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 14:08:38.6290|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 14:08:38.6564|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 14:08:38.6609|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 340.1217ms
+2018-03-28 14:08:38.6865|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 340.1217ms
+2018-03-28 14:08:38.6930|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 398.1763ms 200 application/json; charset=utf-8
+2018-03-28 14:08:38.6930|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 398.1763ms 200 application/json; charset=utf-8
+2018-03-28 14:09:18.7567|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users?orderBy=name&serchQuery=a&pageNumber=1&pageSize=1  
+2018-03-28 14:09:18.7873|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users?orderBy=name&serchQuery=a&pageNumber=1&pageSize=1  
+2018-03-28 14:09:18.7873|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 14:09:18.8030|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 14:09:18.8277|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:09:18.8383|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:09:18.8383|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:09:18.8704|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 14:09:18.8817|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 14:09:18.9106|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 14:09:18.9362|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 14:09:18.9439|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 14:09:18.9439|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 14:09:18.9687|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters) - ModelState is Valid
+2018-03-28 14:09:18.9924|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 14:09:18.9924|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 14:09:19.0258|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 14:09:19.0518|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 14:09:19.0518|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 14:09:19.0518|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 14:09:19.0518|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 271.5575ms
+2018-03-28 14:09:19.0738|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 271.5575ms
+2018-03-28 14:09:19.0886|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 339.752ms 200 application/json; charset=utf-8
+2018-03-28 14:09:19.1045|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 339.752ms 200 application/json; charset=utf-8
+2018-03-28 17:03:18.1527|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 17:03:19.9431|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:03:34.9141|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (416ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:03:35.0986|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:03:35.1793|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:03:35.2316|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:03:36.9788|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 17:03:36.9788|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 17:03:37.5658|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (283ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 17:03:37.5970|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (283ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 17:03:37.6900|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (32ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 17:03:37.7011|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (32ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 17:03:37.7092|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 17:03:37.7092|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 17:03:42.5849|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 17:03:42.7582|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 17:03:43.8134|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1332.5633ms 404 
+2018-03-28 17:03:43.8389|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1332.5633ms 404 
+2018-03-28 17:04:01.0761|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/ application/json 
+2018-03-28 17:04:01.0761|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/ application/json 
+2018-03-28 17:04:01.5034|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:04:01.5187|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:04:01.5259|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:04:01.5384|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:04:01.5384|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:04:01.5557|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:04:01.5686|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:04:01.5908|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:04:01.6157|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:04:01.6381|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:04:01.7696|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/json) - ModelState is Valid
+2018-03-28 17:04:01.7981|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/json) - ModelState is Valid
+2018-03-28 17:04:03.6056|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 17:04:03.6164|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 17:04:03.7005|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 17:04:03.7167|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 17:04:03.9313|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 17:04:03.9444|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 17:04:04.0492|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 2588.1514ms
+2018-03-28 17:04:04.0608|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 2588.1514ms
+2018-03-28 17:04:04.0744|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2996.6519ms 200 application/json; charset=utf-8
+2018-03-28 17:04:04.1026|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2996.6519ms 200 application/json; charset=utf-8
+2018-03-28 17:05:12.0187|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/ application/json 
+2018-03-28 17:05:12.0459|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/ application/json 
+2018-03-28 17:05:12.0799|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:05:12.1090|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:05:12.1090|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:05:12.1213|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:05:12.1213|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:05:12.1548|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:05:12.1548|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:05:12.1845|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:05:12.2071|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:05:12.2187|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:05:12.2284|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/vnd.marvin.hateoas+json) - ModelState is Valid
+2018-03-28 17:05:12.2522|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/vnd.marvin.hateoas+json) - ModelState is Valid
+2018-03-28 17:05:12.2771|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 17:05:12.2930|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 17:05:12.3070|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 17:05:12.3248|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 17:05:13.0670|WARN|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|No output formatter was found for content type 'application/vnd.marvin.hateoas+json' to write the response.
+2018-03-28 17:05:13.1122|WARN|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|No output formatter was found for content type 'application/vnd.marvin.hateoas+json' to write the response.
+2018-03-28 17:05:13.1211|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 1037.7679ms
+2018-03-28 17:05:13.1211|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 1037.7679ms
+2018-03-28 17:05:13.1371|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1122.2226ms 406 
+2018-03-28 17:05:13.1371|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1122.2226ms 406 
+2018-03-28 17:09:43.5495|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 17:09:44.1022|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:09:49.6498|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:09:49.6884|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:09:49.7402|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:09:49.7747|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:09:50.3781|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 17:09:50.4075|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 17:09:50.6277|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (115ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 17:09:50.6643|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (115ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 17:09:50.7398|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 17:09:50.7662|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 17:09:50.7921|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 17:09:50.8190|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 17:09:51.5614|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/ application/json 
+2018-03-28 17:09:51.5614|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 17:09:51.6584|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 17:09:51.6584|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/ application/json 
+2018-03-28 17:09:51.8701|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 336.9761ms 404 
+2018-03-28 17:09:51.9345|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 336.9761ms 404 
+2018-03-28 17:09:52.1996|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:09:52.2119|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:09:52.2337|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:09:52.2481|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:09:52.2549|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:09:52.2549|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:09:52.2735|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:09:52.2735|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:09:52.2868|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:09:52.2868|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:09:52.3638|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/vnd.marvin.hateoas+json) - ModelState is Valid
+2018-03-28 17:09:52.3638|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/vnd.marvin.hateoas+json) - ModelState is Valid
+2018-03-28 17:09:53.2860|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 17:09:53.2948|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 17:09:53.3352|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 17:09:53.3650|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 17:09:53.5239|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 17:09:53.5472|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 17:09:53.8474|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 1577.0724ms
+2018-03-28 17:09:53.8769|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 1577.0724ms
+2018-03-28 17:09:53.8828|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2354.9357ms 200 application/vnd.marvin.hateoas+json; charset=utf-8
+2018-03-28 17:09:53.8955|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2354.9357ms 200 application/vnd.marvin.hateoas+json; charset=utf-8
+2018-03-28 17:23:25.6681|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 17:23:26.4753|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:23:35.2256|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:23:35.2587|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:23:35.2945|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:23:35.3510|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:23:36.0627|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (65ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 17:23:36.0873|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (65ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 17:23:36.7337|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (521ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 17:23:36.7425|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (521ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-03-28 17:23:37.0703|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 17:23:37.1011|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-03-28 17:23:37.1011|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 17:23:37.1251|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?', @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39),
+(@p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51),
+(@p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59);
+2018-03-28 17:23:38.0387|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 17:23:38.1684|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-03-28 17:23:38.3490|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 362.422ms 404 
+2018-03-28 17:23:38.3758|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 362.422ms 404 
+2018-03-28 17:23:39.3898|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/ application/json 
+2018-03-28 17:23:39.4058|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/ application/json 
+2018-03-28 17:23:39.5647|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:23:39.5921|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 17:23:39.6025|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:23:39.6512|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:23:39.6772|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:23:39.7009|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 17:23:39.7009|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:23:39.7167|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 17:23:39.7167|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:23:39.7340|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 17:23:39.8038|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/vnd.marvin.hateoas+json) - ModelState is Valid
+2018-03-28 17:23:39.8200|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/vnd.marvin.hateoas+json) - ModelState is Valid
+2018-03-28 17:23:40.7104|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 17:23:40.7104|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-03-28 17:23:40.7607|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 17:23:40.7607|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-03-28 17:23:40.8980|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 17:23:40.9266|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 17:23:41.4433|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 1687.6233ms
+2018-03-28 17:23:41.4433|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 1687.6233ms
+2018-03-28 17:23:41.4786|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2099.5949ms 200 application/vnd.marvin.hateoas+json; charset=utf-8
+2018-03-28 17:23:41.5110|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2099.5949ms 200 application/vnd.marvin.hateoas+json; charset=utf-8
+2018-03-28 17:24:39.5074|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/ application/json 
+2018-03-28 17:24:39.5074|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/ application/json 
+2018-03-28 17:24:39.5327|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.RootController.GetRoot (Library.API) with arguments (application/vnd.marvin.hateoas+json) - ModelState is Valid
+2018-03-28 17:24:39.5523|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.RootController.GetRoot (Library.API) with arguments (application/vnd.marvin.hateoas+json) - ModelState is Valid
+2018-03-28 17:24:39.5523|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 17:24:39.5796|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-03-28 17:24:39.5851|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.RootController.GetRoot (Library.API) in 58.5798ms
+2018-03-28 17:24:39.5851|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.RootController.GetRoot (Library.API) in 58.5798ms
+2018-03-28 17:24:39.6003|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 90.3015ms 200 application/vnd.marvin.hateoas+json; charset=utf-8
+2018-03-28 17:24:39.6172|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 90.3015ms 200 application/vnd.marvin.hateoas+json; charset=utf-8
+2018-03-28 18:03:31.2631|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 18:03:31.6880|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 18:03:40.7416|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (110ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 18:03:40.7416|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 18:03:40.8290|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 18:03:40.8410|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 18:03:42.3860|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (65ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[NumberOfRegisteredDevices], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 18:03:42.4041|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (65ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[NumberOfRegisteredDevices], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 18:03:42.4942|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'Library.API.Entities.LibraryContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'NumberOfRegisteredDevices'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:5099d9e6-87c7-4403-bbfb-cecbe96a066e
+Error Number:207,State:1,Class:16
+2018-03-28 18:03:42.5369|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'Library.API.Entities.LibraryContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'NumberOfRegisteredDevices'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:5099d9e6-87c7-4403-bbfb-cecbe96a066e
+Error Number:207,State:1,Class:16
+2018-03-28 18:05:12.6819|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 18:05:12.9744|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 18:05:15.4970|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (348ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 18:05:15.5053|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 18:05:15.5540|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 18:05:15.5540|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 18:05:16.0189|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[NumberOfDevices], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 18:05:16.0189|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[NumberOfDevices], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 18:05:16.0796|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'Library.API.Entities.LibraryContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'NumberOfDevices'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:61153032-8e53-4d29-9fb0-c1c6c09ce105
+Error Number:207,State:1,Class:16
+2018-03-28 18:05:16.1231|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'Library.API.Entities.LibraryContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'NumberOfDevices'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:61153032-8e53-4d29-9fb0-c1c6c09ce105
+Error Number:207,State:1,Class:16
+2018-03-28 22:58:13.5023|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-03-28 22:58:16.6510|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-03-28 22:58:33.9715|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 22:58:34.0095|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-03-28 22:58:34.1445|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-03-28 22:58:34.2123|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-03-28 22:58:35.6806|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[NumberOfDevices], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 22:58:35.7400|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[NumberOfDevices], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-03-28 22:58:35.8367|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'Library.API.Entities.LibraryContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'NumberOfDevices'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:9d47810d-c81c-4322-88f2-c7033088a42c
+Error Number:207,State:1,Class:16
+2018-03-28 22:58:35.9543|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'Library.API.Entities.LibraryContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'NumberOfDevices'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:9d47810d-c81c-4322-88f2-c7033088a42c
+Error Number:207,State:1,Class:16

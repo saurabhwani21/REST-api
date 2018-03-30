@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Library.API.Models
 {
-    public class ScoreDto
+    public class ScoreDto : LinkedResourceBaseDto
     {
         public Guid Id { get; set; }
         public DateTimeOffset Timestamp { get; set; }

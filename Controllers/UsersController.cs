@@ -33,7 +33,9 @@ namespace Library.API.Controllers
         }
 
         [HttpGet(Name = "GetUsers")]
-        public IActionResult GetUsers(UserResourceParameters userResourceParameters)
+        [HttpHead]
+        public IActionResult GetUsers(UserResourceParameters userResourceParameters,
+            [FromHeader(Name = "Accept")] string mediaType)
         {
             if(!_propertyMappingService.ValidMappingExistsFor<UserDto, User>
                 (userResourceParameters.OrderBy))
@@ -49,29 +51,68 @@ namespace Library.API.Controllers
 
             var usersFromRepo = _libraryRepository.GetUsers(userResourceParameters);
 
-            var previousPageLink = usersFromRepo.HasPrevious ? 
-                CreateUsersResouceUri(userResourceParameters,
-                ResourceUriType.PreviousPage) : null;
-
-            var nextPageLink = usersFromRepo.HasNext ?
-                CreateUsersResouceUri(userResourceParameters,
-                ResourceUriType.PreviousPage) : null;
-
-            var paginationMetadata = new
-            {
-                totalCount = usersFromRepo.TotalCount,
-                pageSize = usersFromRepo.PageSize,
-                currentPage = usersFromRepo.CurrentPage,
-                totalPages = usersFromRepo.TotalPages,
-                previousPageLink = previousPageLink,
-                nextPageLink = nextPageLink
-            };
-
-            Response.Headers.Add("X-Pagination",
-                Newtonsoft.Json.JsonConvert.SerializeObject(paginationMetadata));
-
             var users = Mapper.Map<IEnumerable<UserDto>>(usersFromRepo);
-            return Ok(users.ShapeData(userResourceParameters.Fields));
+
+            if (mediaType == "application/vnd.marvin.hateoas+json")
+            {
+                var paginationMetadata = new
+                {
+                    totalCount = usersFromRepo.TotalCount,
+                    pageSize = usersFromRepo.PageSize,
+                    currentPage = usersFromRepo.CurrentPage,
+                    totalPages = usersFromRepo.TotalPages,
+
+                };
+
+                Response.Headers.Add("X-Pagination",
+                    Newtonsoft.Json.JsonConvert.SerializeObject(paginationMetadata));
+
+                var links = CreateLinksForUsers(userResourceParameters,
+                    usersFromRepo.HasNext, usersFromRepo.HasPrevious);
+
+                var shapedUsers = users.ShapeData(userResourceParameters.Fields);
+
+                var shapedUsersWithLinks = shapedUsers.Select(user =>
+                {
+                    var userAsDictionary = user as IDictionary<string, object>;
+                    var userLinks = CreateLinksForUser(
+                        (Guid)userAsDictionary["Id"], userResourceParameters.Fields);
+
+                    userAsDictionary.Add("links", userLinks);
+                    return userAsDictionary;
+                });
+
+                var linkedCollectionResource = new
+                {
+                    value = shapedUsersWithLinks,
+                    links = links
+                };
+                return Ok(linkedCollectionResource);
+            }
+            else
+            {
+                var previousPageLink = usersFromRepo.HasPrevious ? CreateUsersResouceUri(userResourceParameters, 
+                    ResourceUriType.PreviousPage) : null;
+
+                var nextPageLink = usersFromRepo.HasNext ? CreateUsersResouceUri(userResourceParameters,
+                    ResourceUriType.NextPage) : null;
+
+                var paginationMetadata = new
+                {
+                    previousPageLink = previousPageLink,
+                    nextPageLink = nextPageLink,
+                    totalCount = usersFromRepo.TotalCount,
+                    pageSize = usersFromRepo.PageSize,
+                    currentPage = usersFromRepo.CurrentPage,
+                    totalPages = usersFromRepo.TotalPages,
+
+                };
+
+                Response.Headers.Add("X-Pagination",
+                    Newtonsoft.Json.JsonConvert.SerializeObject(paginationMetadata));
+
+                return Ok(users.ShapeData(userResourceParameters.Fields));
+            }
         }
 
         private string CreateUsersResouceUri(
@@ -104,7 +145,7 @@ namespace Library.API.Controllers
                           pageNumber = userResourceParameters.PageNumber + 1,
                           pageSize = userResourceParameters.PageSize
                       });
-
+                case ResourceUriType.Current:
                 default:
                     return _urlHelper.Link("GetUsers",
                     new
@@ -138,10 +179,18 @@ namespace Library.API.Controllers
             }
 
             var user = Mapper.Map<UserDto>(userFromRepo);
-            return Ok(user.ShapeData(fields));
+
+            var links = CreateLinksForUser(id, fields);
+
+            var linkedResourceToReturn = user.ShapeData(fields)
+                as IDictionary<string, object>;
+
+            linkedResourceToReturn.Add("links", links);
+
+            return Ok(linkedResourceToReturn);
         }
 
-        [HttpPost]
+        [HttpPost(Name = "CreateUser")]
         public IActionResult CreateUser([FromBody] UserForCreationDto user)
         {
             if (user == null)
@@ -163,9 +212,16 @@ namespace Library.API.Controllers
 
             var userToReturn = Mapper.Map<UserDto>(userEntity);
 
+            var links = CreateLinksForUser(userToReturn.Id, null);
+
+            var linkedResourceToReturn = user.ShapeData(null)
+                as IDictionary<string, object>;
+
+            linkedResourceToReturn.Add("links", links);
+
             return CreatedAtRoute("GetUser",
-                new { id = userToReturn.Id },
-                userToReturn);
+                new { id = linkedResourceToReturn["Id"] },
+                linkedResourceToReturn);
         }
 
         [HttpPost("{id}")]
@@ -179,7 +235,7 @@ namespace Library.API.Controllers
             return NotFound();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}", Name = "DeleteUser")]
         public IActionResult DeleteUser(Guid id)
         {
             var userFromRepo = _libraryRepository.GetUser(id);
@@ -197,6 +253,82 @@ namespace Library.API.Controllers
             }
 
             return NoContent();
+        }
+
+        private IEnumerable<LinkDto> CreateLinksForUser(Guid id, string fields)
+        {
+            var links = new List<LinkDto>();
+
+            if (string.IsNullOrWhiteSpace(fields))
+            {
+                links.Add(
+                    new LinkDto(_urlHelper.Link("GetUser", new { id = id }),
+                    "self",
+                    "GET"));
+            }
+            else
+            {
+                links.Add(
+                    new LinkDto(_urlHelper.Link("GetUser", new { id = id, fields = fields}),
+                    "self",
+                    "GET"));
+            }
+
+            links.Add(
+                new LinkDto(_urlHelper.Link("DeleteUser", new { id = id }),
+                "delete_user",
+                "DELETE"));
+
+            links.Add(
+                new LinkDto(_urlHelper.Link("CreateScoreForUser", new { userId = id }),
+                "create_score_for_user",
+                "POST"));
+
+            //GetScores == GetScoresForUser
+            links.Add(
+                new LinkDto(_urlHelper.Link("GetScores", new { userId = id }),
+                "scores",
+                "GET"));
+
+            return links;
+        }
+
+        private IEnumerable<LinkDto> CreateLinksForUsers(
+            UserResourceParameters userResourceParameters,
+            bool hasNext, bool hasPrevious)
+        {
+            var links = new List<LinkDto>();
+
+            // self 
+            links.Add(
+               new LinkDto(CreateUsersResouceUri(userResourceParameters,
+               ResourceUriType.Current)
+               , "self", "GET"));
+
+            if (hasNext)
+            {
+                links.Add(
+                  new LinkDto(CreateUsersResouceUri(userResourceParameters,
+                  ResourceUriType.NextPage),
+                  "nextPage", "GET"));
+            }
+
+            if (hasPrevious)
+            {
+                links.Add(
+                    new LinkDto(CreateUsersResouceUri(userResourceParameters,
+                    ResourceUriType.PreviousPage),
+                    "previousPage", "GET"));
+            }
+
+            return links;
+        }
+
+        [HttpOptions]
+        public IActionResult GetAuthorOptions()
+        {
+            Response.Headers.Add("Allow", "GET,OPTIONS,POST");
+            return Ok();
         }
     }
 }

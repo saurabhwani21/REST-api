@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Newtonsoft.Json.Serialization;
+using System.Linq;
+using AspNetCoreRateLimit;
 
 namespace Library.API
 {
@@ -36,6 +38,15 @@ namespace Library.API
                 setupAction.ReturnHttpNotAcceptable = true;
                 setupAction.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 setupAction.InputFormatters.Add(new XmlDataContractSerializerInputFormatter());
+
+                var jsonOutputFormatter = setupAction.OutputFormatters
+                .OfType<JsonOutputFormatter>().FirstOrDefault();
+
+                if ( jsonOutputFormatter != null)
+                {
+                    jsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.marvin.hateoas+json");
+                }
+
             })
             .AddJsonOptions(options =>
             {
@@ -63,6 +74,50 @@ namespace Library.API
             services.AddTransient<IPropertyMappingService, PropertyMappingService>();     
             
             services.AddTransient<ITypeHelperService, TypeHelperService>();
+
+            //taking care of cache headers 
+            services.AddHttpCacheHeaders(
+                (expirationModelOptions)
+                =>
+                {
+                    expirationModelOptions.MaxAge = 600;
+                },
+                (validationModelOptions)
+                =>
+                {
+                    validationModelOptions.AddMustRevalidate = true;
+                });
+
+            services.AddResponseCaching();
+
+            //To limit number of requests per ip
+            services.AddMemoryCache();
+
+            services.Configure<IpRateLimitOptions>((options) =>
+            {
+                //Can whitelist certain ips as well options.whitelsit
+                options.GeneralRules = new System.Collections.Generic.List<RateLimitRule>()
+                {
+                    new RateLimitRule()
+                    {
+                        //Limit 3 request in 5minutes
+                        Endpoint = "*",
+                        Limit = 1000,
+                        Period = "5m"
+                    },
+                    new RateLimitRule()
+                    {
+                        //Limit 3 request in 5minutes
+                        Endpoint = "*",
+                        Limit = 200,
+                        Period = "10s"
+                    }
+                };
+            });
+
+            //Add above request only once and not for every request
+            services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -132,6 +187,13 @@ namespace Library.API
 
 
             libraryContext.EnsureSeedDataForContext();
+
+            app.UseIpRateLimiting();
+
+            app.UseResponseCaching();
+
+            //important to add before mvc is added. 
+            app.UseHttpCacheHeaders();
 
             app.UseMvc(); 
         }

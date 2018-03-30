@@ -28,6 +28,9 @@ namespace Library.API.Entities
         [MaxLength(50)]
         public string Password { get; set; }
 
+        //[MaxLength(10)]
+        //public int NumberOfDevices { get; set; }
+
         [Required]
         [MaxLength(50)]
         public string IMEI { get; set; }

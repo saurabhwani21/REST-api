@@ -64,7 +64,14 @@ namespace Library.API.Controllers
 
             var scoresForUser = Mapper.Map<IEnumerable<ScoreDto>>(scoresFromRepo);
 
-            return Ok(scoresForUser);
+            scoresForUser = scoresForUser.Select(score =>
+            {
+                score = CreateLinksForScore(score);
+                return score;
+            });
+
+            var wrapper = new LinkedCollectionResourceWrapperDto<ScoreDto>(scoresForUser);
+            return Ok(CreateLinksForScores(wrapper));
         }
 
         private string CreateScoreResouceUri(
@@ -116,10 +123,10 @@ namespace Library.API.Controllers
             }
 
             var scoreForUser = Mapper.Map<ScoreDto>(scoreForUserFromRepo);
-            return Ok(scoreForUser);
+            return Ok(CreateLinksForScore(scoreForUser));
         }
 
-        [HttpPost()]
+        [HttpPost(Name = "CreateScoreForUser")]
         public IActionResult CreateScoreForUser(Guid userId,
             [FromBody] ScoreForCreationDto score)
         {
@@ -153,10 +160,10 @@ namespace Library.API.Controllers
 
             return CreatedAtRoute("GetScoreForUser",
                 new { userId = userId, id = scoreToReturn.Id },
-                scoreToReturn);
+                CreateLinksForScore(scoreToReturn));
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}", Name = "DeleteScoreForUser")]
         public IActionResult DeleteScoreForUser(Guid userId, Guid id)
         {
             if (!_libraryRepository.UserExists(userId))
@@ -182,7 +189,7 @@ namespace Library.API.Controllers
             return NoContent();
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id}", Name = "UpdateScoreForUser")]
         public IActionResult UpdateScoreForUser(Guid userId, Guid id,
             [FromBody] ScoreForUpdateDto score)
         {
@@ -236,7 +243,7 @@ namespace Library.API.Controllers
             return NoContent();
         }
 
-        [HttpPatch("{id}")]
+        [HttpPatch("{id}", Name = "PartiallyUpdateScoreForUser")]
         public IActionResult PartiallyUpdateScoreForUser(Guid userId, Guid id,
             [FromBody] JsonPatchDocument<ScoreForUpdateDto> patchDoc)
         {
@@ -288,6 +295,41 @@ namespace Library.API.Controllers
             }
 
             return NoContent();
+        }
+
+        private ScoreDto CreateLinksForScore(ScoreDto score)
+        {
+            score.Links.Add(new LinkDto(_urlHelper.Link("GetScoreForUser",
+                new { id = score.Id }),
+                "self",
+                "Get"));
+
+            score.Links.Add(new LinkDto(_urlHelper.Link("DeleteScoreForUser",
+                new { id = score.Id }),
+                "delete_score",
+                "DELETE"));
+
+            score.Links.Add(new LinkDto(_urlHelper.Link("UpdateScoreForUser",
+                new { id = score.Id }),
+                "update_score",
+                "PUT"));
+
+            score.Links.Add(new LinkDto(_urlHelper.Link("PartiallyUpdateScoreForUser",
+                new { id = score.Id }),
+                "partially_update_score",
+                "PATCH"));
+            return score;
+        }
+
+        private LinkedCollectionResourceWrapperDto<ScoreDto> CreateLinksForScores(
+            LinkedCollectionResourceWrapperDto<ScoreDto> scoresWrapper)
+        {
+            scoresWrapper.Links.Add(
+                new LinkDto(_urlHelper.Link("GetScores", new { }),
+                "self",
+                "GET"));
+
+            return scoresWrapper;
         }
     }
 }
