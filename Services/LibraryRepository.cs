@@ -4,6 +4,8 @@ using Library.API.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Library.API.Services
 {
@@ -18,11 +20,19 @@ namespace Library.API.Services
             _propertyMappingService = propertyMappingService;
         }
 
+        public Uid ValidateUser(string username, string password)
+        {
+            var results = _context.Users.Where(a => a.UserName == username && a.Password == Helpers.GenerateHash.encryptPassword(password));
+            User result = null;
+            if (results.Any())
+            { result = (User)results.First(); }
+            return (result != null) ? new Uid(result.Id.ToString(), result.UserType) : null;            
+        }
+
         public void AddUser(User user)
         {
             user.Id = Guid.NewGuid();
             _context.Users.Add(user);
-
             // the repository fills the id (instead of using identity columns)
             if (user.Scores.Any())
             {
@@ -44,13 +54,49 @@ namespace Library.API.Services
                 {
                     score.Id = Guid.NewGuid();
                 }
+                if (_context.Scores.Any((a => a.UserId == userId)))
+                {
+                    IEnumerable<Score> previousScore = _context.Scores.Where(a => a.UserId == userId);
+                    Parallel.ForEach(previousScore, (scr) =>
+                    {
+                        scr.LatestScore = false;
+                    });
+                }
+                //later change imei to collection*****************************
+                score.IMEI = user.IMEI;
+                score.LatestScore = true;
+                score.TimeStamp = System.DateTime.Now;
                 user.Scores.Add(score);
             }
+        }
+
+        public void CompareScoreForUser(Guid userId, Score score)
+        {            
+            //Get the latest score for all the users in descending order. 
+            var allLatestScores = _context.Scores.Where(a => a.LatestScore == true)
+                                          .Where(b => (b.TimeStamp - DateTime.Now).TotalDays < 30)
+                                          .OrderByDescending(c => c.InstanceScore).AsQueryable().ToList();
+            Parallel.ForEach(allLatestScores, (records, ParallelLoopState) =>
+            {
+                if (records.Id == score.Id)
+                {
+                    Score temp = records;
+                    var scoreToAdd = score;
+                    scoreToAdd.ScoreComparison = (allLatestScores.IndexOf(records) + 1 + " / " + allLatestScores.Count);
+                    AddScoreForUser(score.UserId, score);                   
+                    ParallelLoopState.Break();
+                }
+            });
         }
 
         public bool UserExists(Guid userId)
         {
             return _context.Users.Any(a => a.Id == userId);
+        }
+
+        public bool UserExists(string username)
+        {
+            return _context.Users.Any(a => a.UserName == username);
         }
 
         public void DeleteUser(User user)
@@ -71,15 +117,9 @@ namespace Library.API.Services
         public PagedList<User> GetUsers(
             UserResourceParameters userResourceParameters)
         {
-            //var collectionBeforePaging = _context.Users
-            //    .OrderBy(a => a.FirstName)
-            //    .ThenBy(a => a.LastName).AsQueryable();
-
             var collectionBeforePaging =
                 _context.Users.ApplySort(userResourceParameters.OrderBy,
                 _propertyMappingService.GetPropertyMapping<UserDto, User>());
-         
-
 
             //Search using search query (Firstname and Lastname)
             if (!string.IsNullOrEmpty(userResourceParameters.SearchQuery))
