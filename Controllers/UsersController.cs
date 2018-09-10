@@ -4,31 +4,38 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Library.API.Helpers;
 using AutoMapper;
 using Library.API.Entities;
 using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace Library.API.Controllers
 {
     [Route("api/users")]
     public class UsersController : Controller
     {
-        private ILibraryRepository _libraryRepository;
+        private ILibraryRepository _libraryRepository;       
         private IUrlHelper _urlHelper;
         private IPropertyMappingService _propertyMappingService;
         private ITypeHelperService _typeHelperService;
+
+        private readonly JsonSerializerSettings _serializerSettings;
 
         public UsersController(ILibraryRepository libraryRepository,
             IUrlHelper urlHelper,
             IPropertyMappingService propertyMappingService,
             ITypeHelperService typeHelperService)
         {
-            _libraryRepository = libraryRepository;
+            _libraryRepository = libraryRepository;       
             _urlHelper = urlHelper;
             _propertyMappingService = propertyMappingService;
-            _typeHelperService = typeHelperService;
+            _typeHelperService = typeHelperService;                     
+
+            _serializerSettings = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented
+            };
 
         }
 
@@ -51,7 +58,6 @@ namespace Library.API.Controllers
 
             var usersFromRepo = _libraryRepository.GetUsers(userResourceParameters);
 
-            var users = Mapper.Map<IEnumerable<UserDto>>(usersFromRepo);
 
             if (mediaType == "application/vnd.marvin.hateoas+json")
             {
@@ -70,6 +76,7 @@ namespace Library.API.Controllers
                 var links = CreateLinksForUsers(userResourceParameters,
                     usersFromRepo.HasNext, usersFromRepo.HasPrevious);
 
+                var users = Mapper.Map<IEnumerable<UserDto>>(usersFromRepo);
                 var shapedUsers = users.ShapeData(userResourceParameters.Fields);
 
                 var shapedUsersWithLinks = shapedUsers.Select(user =>
@@ -110,7 +117,7 @@ namespace Library.API.Controllers
 
                 Response.Headers.Add("X-Pagination",
                     Newtonsoft.Json.JsonConvert.SerializeObject(paginationMetadata));
-
+                var users = Mapper.Map<IEnumerable<UserDto>>(usersFromRepo);
                 return Ok(users.ShapeData(userResourceParameters.Fields));
             }
         }
@@ -161,6 +168,7 @@ namespace Library.API.Controllers
             }
         }
 
+
         [HttpGet("{id}", Name = "GetUser")]
         public IActionResult GetUser(Guid id, [FromQuery] string fields, UserResourceParameters userResourceParameters)
         {
@@ -190,17 +198,33 @@ namespace Library.API.Controllers
             return Ok(linkedResourceToReturn);
         }
 
+        [HttpPost("login")]
+        public IActionResult Validate([FromBody] UsernamePasswordValidation credentials)
+        {
+            //Give T/F if user is validated
+            Uid userObject = _libraryRepository.ValidateUser(credentials.username, credentials.password);
+            return (userObject == null) ? Ok(null) : Ok(userObject);            
+        }
+
         [HttpPost(Name = "CreateUser")]
         public IActionResult CreateUser([FromBody] UserForCreationDto user)
         {
+            // Checks if the information object received is empty
             if (user == null)
             {
                 return BadRequest();
             }
 
+            //Checks if the same username already exists.
+            if (_libraryRepository.UserExists(user.Username))
+            {
+                return new StatusCodeResult(StatusCodes.Status409Conflict);
+            }
+
+            user.Password = Helpers.GenerateHash.encryptPassword(user.Password);
+
             var userEntity = Mapper.Map<User>(user);
-
-
+            
             _libraryRepository.AddUser(userEntity);
 
             if (! _libraryRepository.Save())
@@ -220,7 +244,7 @@ namespace Library.API.Controllers
             linkedResourceToReturn.Add("links", links);
 
             return CreatedAtRoute("GetUser",
-                new { id = linkedResourceToReturn["Id"] },
+                new { id = userToReturn.Id },
                 linkedResourceToReturn);
         }
 
